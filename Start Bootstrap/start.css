@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: sans-serif;
+}
+
+body a {
+    text-decoration: none;
+    color: white;
+}
+
+body a:hover {
+    color: rgb(129, 129, 15);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.3rem;
+    background-color: rgb(37, 36, 36);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav img {
+    width: 9rem;
+}
+
+nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+#home {
+    width: 100%;
+    height: 95vh;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-size: 3.3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home em {
+    font-size: 2.5rem;
+}
+
+#home button {
+    width: 14rem;
+    padding: 1.3rem;
+    background-color: rgb(195, 195, 29);
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+#home button:hover {
+    background-color: rgb(129, 129, 15);
+}
+
+#home article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20rem;
+    gap: 2rem;
+}
+
+
+#home2 {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+}
+
+#home2 section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home2 section article {
+    width: 30%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+#home2 section article strong {
+    width: 80%;
+    font-size: 1rem;
+    color: grey;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+#home2 section article ion-icon {
+    font-size: 5rem;
+    background-color: rgb(248, 172, 20);
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+#home2 span h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#home2 span p {
+    font-size: 1.2rem;
+    color: grey;
+}
+
+
+#home3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 232, 232);
+}
+
+#home3 section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#home3 article {
+    width: 25rem;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+    background-color: rgb(240, 232, 232);
+    position: relative;
+}
+
+#home3 section article img {
+    width: 23rem;
+    height: 17rem;
+}
+
+#home3 ion-icon {
+    font-size: 6rem;
+    font-weight: bold;
+    position: absolute;
+    background-color: yellow;
+    color: white;
+    top: .8rem;
+    opacity: 0;
+    padding: 5.5rem 8.5rem;
+
+}
+
+#home3 article:hover ion-icon {
+    opacity: .6;
+    z-index: 1;
+    transform: scale(1.03);
+    transition-duration: 1s;
+}
+
+
+#home3 article:hover img {
+    transform: scale(1.03);
+    transition-duration: 1s;
+}
+
+#home3 section article h3 {
+    font-size: 1.5rem;
+}
+
+#home3 section article p {
+    color: grey;
+}
+
+#home3 span h1 {
+    font: 2.5rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#home3 span p {
+    color: grey;
+}
+
+#home4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding: 4rem;
+    align-items: center;
+}
+
+#home4 section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#home4 section article {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+#home4 section article p{
+    line-height: 1.5rem;
+    color: grey;
+}
+#home4 section article h2{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+#home4 section article:first-child {
+    height: 55rem;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+#home4 section article:first-child p{
+    width: 85%;
+    align-items: flex-end;
+}
+
+#home4 section article:last-child {
+    height: 63rem;
+    padding-top: 9rem;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+#home4 button {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(129, 129, 15);color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 8px solid rgb(231, 227, 227);
+
+}
+
+#home4 section article:last-child aside {
+    align-items: flex-start;
+}
+#home4 section article:last-child p{
+    width: 85%;
+}
+
+
+#home4 section article aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#home4 section #images {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#images img {
+    width: 10rem;
+    background-color: rgb(231, 227, 227);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+#images p {
+    width: 2px;
+    background-color: grey;
+    height: 10rem;
+}
+
+#home4 span h1{
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+#home4 span p {
+    padding: 1.5rem;
+    color: grey;
+    text-align: center;
+}
+
+
+
+
+
+#home5 {
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(240, 232, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home5 section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home5 section article {
+    width: 25rem;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home5 section article img {
+    width: 13rem;
+    height: auto;
+    border-radius: 50%;
+    background-color: lightgrey;
+    padding: 0.5rem;
+}
+
+#home5 section article ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home5 section article ul ion-icon {
+    font-size: 1.8rem;
+    margin: 0.5rem;
+}
+
+#home5 span h1 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#home5 span p {
+    padding: 0.5rem;
+    color: grey;
+    text-align: center;
+}
+
+#para {
+    width: 49%;
+    color: grey;
+    padding: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+
+#home6 {
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home6 img {
+    width: 11rem;
+}
+
+#home7 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://wallpaperaccess.com/full/1867010.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#home7 span h1 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+#home7 span p {
+    padding: 0.5rem;
+    color: grey;
+
+}
+
+#home7 section {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#home7 section article {
+    width: 40%;
+}
+
+#home7 input {
+    width: 100%;
+    padding: 1.4rem;
+    margin: 0.5rem;
+    font-weight: bolder;
+}
+
+#home7 textarea {
+    padding: 1rem;
+    color: grey;
+    font-weight: bolder;
+}
+
+#home7 button {
+    width: 14rem;
+    padding: 1.3rem;
+    background-color: rgb(195, 195, 29);
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+footer {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: grey;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+footer ion-icon {
+    font-size: 2.5rem;
+    color: black;
+}
